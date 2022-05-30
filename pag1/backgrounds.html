@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <title>Site Pika</title>
+    <link rel="shortcut icon" href="../midia/Santos-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="teste-background.css">
+    <style>
+        #Caixa_de_Testes {
+            text-align: center;
+        }
+        .Testes {
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+        }
+        #Teste1 {
+            background-image: url(../midia/Santos-icon.png);
+            background-size: 100%;
+        }
+        #Teste2 {
+            background-color: blueviolet;
+        }
+        #Teste3 {
+            background-image: linear-gradient(to bottom, #cc02ff, rgb(54, 0, 153));
+        }
+        #Teste4 {
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 610px;
+            height: 300px;
+            background-image: url(../midia/Santos-icon.png);
+            background-size: 100px 100px;
+            /*background-repeat: no-repeat;*/
+            /*background-repeat: repeat-y;*/
+            /*background-repeat: repeat-x;*/
+        }
+        .quadros {
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 200px;
+            height: 200px;
+            background-image: url(../midia/Santos-icon.png);
+            background-size: 600px;
+        }
+        .quadros > div {
+            padding: 0px;
+        }
+        #q1 {
+            background-position: left top;
+        }
+        #q2 {
+            background-position: center top;
+        }
+        #q3 {
+            background-position: right top;
+        }
+        #q4 {
+            background-position: left center;
+        }
+        #q5 {
+            background-position: center;
+        }
+        #q6 {
+            background-position: right center;
+        }
+        #q7 {
+            background-position: left bottom;
+        }
+        #q8 {
+            background-position: center bottom;
+        }
+        #q9 {
+            background-position: right bottom;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id="botao_voltar">
+        <a href="../index.html" target="_self" rel="prev">
+            <picture>
+                <img src="../midia/seta-back.png" width="40" height="30">
+            </picture>
+        </a>
+    </div>-->
+    
+    <main>
+        <h1>Testes de background</h1>
+
+        <div id="Caixa_de_Testes">
+            <div class="Testes" id="Teste1">
+            
+            </div>
+            <div class="Testes" id="Teste2">
+            
+            </div>
+            <div class="Testes" id="Teste3">
+
+            </div>
+            <div id="Teste4">
+
+            </div>
+
+            <div id="Imagem_dividida">
+                <p>Imagem do santos dividída</p>
+                <div class="quadros" id="q1">
+
+                </div>
+                <div class="quadros" id="q2">
+
+                </div>
+                <div class="quadros" id="q3">
+
+                </div>
+
+                <div class="quadros" id="q4">
+
+                </div>
+                <div class="quadros" id="q5">
+
+                </div>
+                <div class="quadros" id="q6">
+
+                </div>
+
+                <div class="quadros" id="q7">
+
+                </div>
+                <div class="quadros" id="q8">
+
+                </div>
+                <div class="quadros" id="q9">
+
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
