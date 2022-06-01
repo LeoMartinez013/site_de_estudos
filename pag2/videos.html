@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title>Site Pika</title>
+        <link rel="shortcut icon" href="../midia/Santos-icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="videos.css">
+        <style>
+            header {
+                color: #A5CAD3;
+                position: relative;
+                background-color: #1f4952;
+                height: 60px;
+                width: 100%;
+                
+                padding: 0px;
+                margin: 0px;
+            }
+            #back_bottom {
+                background-color: #5caab8;
+                text-align: center;
+
+                text-align: center;
+                width: 50px;
+                height: 50px;
+                font-variant: small-caps;
+                position: absolute;
+                left: 5%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                
+                border: 1px solid #5caab8;
+                border-radius: 50px;
+                padding: 0px;
+                margin: 0px;
+            }
+            main {
+                padding: 7px 20px;
+                margin: auto;
+                min-width: 320px;
+                max-width: 800px;
+            }
+            #video {
+                background-color: #F2AC29;
+                padding: 20px;
+                padding-bottom: 55%;
+                margin: 0px -20px 30px -20px;
+                position: relative;
+            }
+            #video > iframe {
+                position: absolute;
+                top: 5%;
+                left: 5%;
+                width: 90%;
+                height: 90%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="../index.html" target="_self" rel="prev">
+                <div id="back_bottom">
+                    
+                </div>
+            </a>
+        </header>
+        <main>
+            <div id="video">
+                <iframe width="400" height="315" src="https://www.youtube.com/embed/M8sguT0zQfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </main>
+    </body>
+</html>
