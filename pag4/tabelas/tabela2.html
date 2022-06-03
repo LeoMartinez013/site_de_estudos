@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <title>Site Pika</title>
+        <link rel="shortcut icon" href="../midia/Santos-icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="../../main.css">
+        <style>
+            header {
+                color: #A5CAD3;
+                background-color: #1f4952;
+                height: 60px;
+                width: 100%;
+                
+                padding: 0px;
+                margin: 0px;
+            }
+            h1 {
+                font-size: 22px;
+                text-align: center;
+            }
+            #tabela {
+                overflow-x: auto;
+            }
+            table {
+                width: 400px;
+                height: auto;
+                text-align: center;
+                border-collapse: collapse;
+                margin: 0% auto 0% auto;
+            }
+            caption {
+                color: #C5D7D9;
+                font-weight: bold;
+                background-color: #1f4952;
+            }
+            th {
+                font-weight: bold;
+                width: auto;
+                height: 30px;
+                border: 1px solid black;
+                margin: 0px;
+            }
+            td {
+                width: auto;
+                height: 30px;
+                border: 1px solid black;
+                margin: 0px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="hback">
+            <!--<a href="../index.html" target="_self" rel="prev">
+                <div id="back_bottom">
+                    <link rel="stylesheet" href="../../main.css">
+                </div>
+            </a>-->
+            <a id="botao_back" href="../tabelas.html" target="_self" rel="prev">
+                <div id="back_bola">
+                    <div id="back_seta"></div>
+                </div>
+            </a>
+        </header>
+        <main>
+            <h1>Tabela 2</h1>
+            <!--
+                ANATOMIA PARA TABELAS GRANDES
+                TD = DADO
+                TH = TITULO
+                TABLE
+                    THEAD
+                        TR, TD, TH
+                    TBODY
+                        TR, TD, TH
+                    TFOOT
+                        TR, TD, TH
+            -->
+            <div id="tabela">
+                <table id="tabela2">
+                    <caption>Título</caption>
+                    <thead>
+                        <th>População</th>
+                        <th>Número</th>
+                    </thead>
+                    <tbody>
+                        <td>São Paulo</td>
+                        <td>45 919 649</td>
+                    </tbody>
+                    <tfoot>
+                    </tfoot>
+                </table>
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

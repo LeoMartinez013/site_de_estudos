@@ -1,0 +1,48 @@
+subclasse :hover 
+    para mudar algo quando o mouse passar por cima.
+
+height = altura da caixa
+width = largura da caixa
+border = borda da caixa
+padding = preenchimento entre a border e a caixa
+margin = margem de fora da border
+outline = entre a margin e o border
+
+Dois tipos de caixa:
+box-level: caixa que ocupa a viewerpoint total, sem quebrar linhas
+
+exemplos: 
+    <div>
+    <h1>
+    <h1-h6>
+    <main>
+    <header>
+    <nav>
+    <article>
+    <aside>
+    <form>
+    <video>
+
+inline-level: caixa que pode usar na mesma linha q outras caixas
+    <span>
+    <a>
+    <code>
+    <small>
+    <strong>
+    <em>
+    <sup> - <sub>
+    <label>
+    <button>
+    <select>
+--------------------------------------------
+background-size: cove; < mostra a imagem na tela toda, mas cortando partes
+
+background-attachment: fixed; < fixa o background no site todo
+
+***
+shorthand - background
+    color > image > position > repeat  > (size) > attachment
+
+o (size) não funciona direito
+--------------------------------------------
+overflow-x: auto; >> para criar uma rolagem lateral(x) só pra div
