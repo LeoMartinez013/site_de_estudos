@@ -31,15 +31,27 @@ main {
 
     margin: 0px auto;
 }
-#seta {
-    clip-path: polygon(40% 6%, 40% 26%, 100% 26%, 100% 76%, 40% 76%, 40% 94%, 0 51%);
+#back_bola {
     background-color: #5caab8;
+    border: 1px solid #5caab8;
+    border-radius: 50%;
+    
+    text-align: center;
     height: 50px;
     width: 50px;
-
+    
+    position: relative;
+    margin: 0px 2vw 0px 2vw;
+}
+#back_seta {
+    clip-path: polygon(40% 6%, 40% 26%, 100% 26%, 100% 76%, 40% 76%, 40% 94%, 0 51%);
+    background-color: #1f4952;
+    
+    width: 80%;
+    height: 80%;
     position: absolute;
-    left: 2vw;
-    top: 5px;
+    left: 9%;
+    top: 10%;
 }
 /*#back_bottom {
             background-color: #5caab8;
