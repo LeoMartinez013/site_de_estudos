@@ -12,16 +12,7 @@
             display: flex;
             flex-direction: column;
         }
-        header {
-            color: #A5CAD3;
-            position: relative;
-            background-color: #1f4952;
-            height: 60px;
-            width: 100%;
-            
-            padding: 0px;
-            margin: 0px;
-        }
+        
         header > h1 {
             font-size: 7mm;
             text-align: center;
@@ -36,11 +27,11 @@
             margin: 0px;
         }
         main {
-            padding: 0px 20px;
             min-width: 320px;
             max-width: 900px;
             text-align: center;
             margin: 0px auto;
+            flex-grow: 1;
         }
         #info > h1 {
             font-size: 4mm;
@@ -49,8 +40,6 @@
             text-align: center;
         }
         #teste {
-            border: 1px solid black;
-            border-radius: 10px;
             display: flex;
             flex-wrap: wrap;
             align-items: flex-start;
@@ -59,8 +48,8 @@
         }
         #links {
             width: 300px;
-            background-color: #8CC8C6;
-            border: 1px solid #8CC8C6;
+            background-color: #cacaca;
+            border: 1px solid #cacaca;
             border-radius: 15px;
             margin: auto 20px 20px 20px;
         }
@@ -90,8 +79,8 @@
         #pags {
             height: auto;
             width: 300px;
-            background-color: #8CC8C6;
-            border: 1px solid #8CC8C6;
+            background-color: #cacaca;
+            border: 1px solid #cacaca;
             border-radius: 15px;
             margin: auto 20px auto 20px;
         }
@@ -100,17 +89,11 @@
             text-align: center;
             margin: 10px 20px;
         }
-        footer {
-            color: #A5CAD3;
-            background-color: #1f4952;
-            height: 60px;
-            width: 100%;
-            margin: 20px 0px 0px 0px;
-        }
+        
      </style>
 </head>
 <body>
-    <header>
+    <header class="hMenu">
         <h1>
             Leonardo Martinez
         </h1>
@@ -156,7 +139,7 @@
                         <a href="pag1/backgrounds.html" target="_self" rel="next">Background</a>
                     </p>
                     <p>
-                        <a href="pag2/videos.html" target="_self" rel="next">Videos</a>
+                        <a href="pag2/videos.html" target="_self" rel="next">Vídeos</a>
                     </p>
                     <p>
                         <a href="pag3/imagens.html" target="_self" rel="next">Imagens</a>
@@ -169,6 +152,7 @@
         </div>
     </main>
     <footer>
+        <div id="color_bar"></div>
         <h2>site em desenvolvimento</h2>
     </footer>
 </body>

@@ -18,6 +18,20 @@
                 padding: 0px;
                 margin: 0px;
             }
+            main {
+
+                min-width: 320px;
+                max-width: 1240px;
+                padding: 20px;
+            }
+            #imagem_responsiva {
+                text-align: center;
+                width: 100%;
+            }
+            h1 {
+                font-size: 20px;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
@@ -37,11 +51,17 @@
             <h1>
                 Teste de imagem responsiva
             </h1>
-            <picture class="teste_imagens">
-                <source media="(max-width: 900px)" srcset="../midia/foto-p.png" type="image/png">
-                <source media="(max-width: 1200px)" srcset="../midia/foto-m.png" type="image/png">
-                <img src="../midia/foto-g.png" alt="foto g">
-            </picture>
+            <div id="imagem_responsiva">
+                <picture class="teste_imagens">
+                    <source media="(max-width: 500px)" srcset="../midia/foto-p.png" type="image/png">
+                    <source media="(max-width: 900px)" srcset="../midia/foto-m.png" type="image/png">
+                    <img src="../midia/foto-g.png" alt="foto g">
+                </picture>
+            </div>
         </main>
+        <footer>
+            <div id="color_bar"></div>
+            <h2>site em desenvolvimento</h2>
+        </footer>
     </body>
 </html>

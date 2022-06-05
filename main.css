@@ -13,26 +13,74 @@ paleta {
     #0D1117
 }
 :root {
-    --fundo_padrao: #C5D7D9;   
+    --header_padrao: #1f4952;
+    --headerText_padrao: #A5CAD3;
+    --fundo_padrao: #C5D7D9;
+
+
+    --fundo_teste:  #e4e4e4;
+    --main_teste: #ffffff;
+    --header_teste: #1d1d1d;
+    --headerText_teste: #e4e4e4;
+    --footer_teste: #1d1d1d;
+    --footerText_teste: #e4e4e4;
 }
 body {
-    background-color: var(--fundo_padrao);
+    background-color: var(--fundo_teste);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana,sans-serif;
     font-weight: normal;
     margin: 0px;
     padding: 0px;
 
     min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+.hMenu {
+    color: var(--headerText_teste);
+    position: relative;
+    background-color: var(--header_teste);
+    height: 60px;
+    width: 100%;
+    
+    padding: 0px;
+    margin: 0px;
 }
 main {
-    padding: 0px 20px;
+    background-color: var(--main_teste);
+    padding: 20px 0px 20px 0px;
     min-width: 320px;
     max-width: 800px;
-
     margin: 0px auto;
+    flex-grow: 1;
+}
+footer {
+    color: var(--footerText_teste);
+    background-color: var(--footer_teste);
+    text-align: center;
+    height: 60px;
+    width: 100%;
+}
+#color_bar {
+    width: 100%;
+    height: 10px;
+    background-image: linear-gradient(to right, #cc02ff, rgb(54, 0, 153));
+}
+footer > h2 {
+    font-size: 20px;
+    margin: 0px 20% 50% 20%;
 }
 .hback {
     position: relative;
+    color: var(--headerText_teste);
+    
+    background-color: var(--header_teste);
+    height: 60px;
+    width: 100%;
+    
+    padding: 0px;
+    margin: 0px;
 }
 #botao_back {
     width: 50px;
@@ -44,8 +92,7 @@ main {
     bottom: 5px;
 }
 #back_bola {
-    background-color: #5caab8;
-    border: 0px solid #5caab8;
+    background-image: linear-gradient(to bottom, #cc02ff, rgb(68, 3, 189));
     border-radius: 50%;
     
     text-align: center;
@@ -58,7 +105,7 @@ main {
 }
 #back_seta {
     clip-path: polygon(40% 6%, 40% 26%, 100% 26%, 100% 76%, 40% 76%, 40% 94%, 0 51%);
-    background-color: #1f4952;
+    background-color: var(--header_teste);
     
     width: 80%;
     height: 80%;
