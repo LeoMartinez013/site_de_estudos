@@ -37,6 +37,11 @@ body {
     display: flex;
     flex-direction: column;
 }
+a {
+    text-decoration: none;
+    color: #360099;
+    font-weight: 500;
+}
 .hMenu {
     color: var(--headerText_teste);
     position: relative;
@@ -49,7 +54,7 @@ body {
 }
 main {
     background-color: var(--main_teste);
-    padding: 20px 0px 20px 0px;
+    padding: 0px;
     min-width: 320px;
     max-width: 800px;
     margin: 0px auto;
@@ -65,7 +70,7 @@ footer {
 #color_bar {
     width: 100%;
     height: 10px;
-    background-image: linear-gradient(to right, #cc02ff, rgb(54, 0, 153));
+    background-image: linear-gradient(to right, #cc02ff, #360099);
 }
 footer > h2 {
     font-size: 20px;
