@@ -48,16 +48,12 @@
                     <div id="back_seta"></div>
                 </div>
             </a>
-
-            <div id="busca2">
-                <input type="search" name="busca1" id="busca1">
-            </div>
         </header>
         <main>
             <h1 id="teste">Testes de Javascript</h1>
+            <h2 id="boas_vindas">.</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum fugit, facilis adipisci minima consequuntur quia hic sed incidunt in quos delectus corrupti officia, voluptatem laborum error cupiditate. Impedit, debitis voluptatem?</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias temporibus sapiente nihil ipsum architecto, voluptatum ullam repellendus. Perferendis consequatur soluta ratione laudantium, laborum architecto facilis delectus unde veniam veritatis ducimus.</p>
-
             <aside id="testes">
                 <div id="teste_click">
                     <div id="click">
@@ -65,7 +61,6 @@
                     </div>
                 </div>
                 <div id="teste_soma">
-                    input
                     <input type="number" name="txtn1
                     " id="txtn1">
                     <input type="number" name="txtn2" id="txtn2">
@@ -91,6 +86,23 @@
             /*var d = document.getElementById('teste')
             d.style.background = 'green'*/
 
+            var site = document.getElementsByTagName('html')
+            var agora = new Date()
+            var hora = agora.getHours
+            var boasVindas = document.getElementById('boas_vindas')
+            site.addEventListener('load', cumprimentar)
+            
+            function cumprimentar() {
+                if(hora>=5 %% hora<12) {
+                    boasVindas.innerText = 'Bom dia.';
+                }else if(hora>=12 %% hora<18) {
+                    boasVindas.innerText = 'Boa tarde.';
+                }else if(hora>=18 %% hora<00) {
+                    boasVindas.innerText = 'Boa noite.';
+                }else{
+                    boasVindas.innerText = 'Boa madrugada';
+                }
+            }
             var a = document.getElementById('click')
             a.addEventListener('click', clicar)
             a.addEventListener('mouseout', sair)
@@ -115,6 +127,7 @@
                 var s = n1 + n2
                 res.innerHTML = `${n1} + ${n2} = <strong>${s}</strong>`
             }
+            
         </script>
     </body>
 </html>
