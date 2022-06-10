@@ -1,0 +1,25 @@
+window
+    locatino
+    document
+        html
+            head
+                meta
+                title
+            body
+                header
+                main
+    history
+
+ATRIBUIÇÕES
+
+por marca
+    getElementByTagName()
+por id
+    getElementById() = chamar o id da <tag>
+por nome
+    getElementByName()
+por classe
+    getElementByClassName()
+por seletor
+    querySelector()
+    querySelectorAll()

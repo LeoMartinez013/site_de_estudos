@@ -1,0 +1,10 @@
+mouseenter =    mouse entrou na div
+mousemove =     mouse movendo dentro da div
+mousedown =     mouse segurando div
+mouseup =       mouse soltando div
+click =         mouse clikando por completo na div
+mouseout =      mouse movendo pra fora da div
+
+função ação(parâmetros){
+
+}

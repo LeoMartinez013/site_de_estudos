@@ -1,0 +1,38 @@
+Regras Variavel:
+    Podem começar com LETRA, $ ou _
+    Não podem começar com NÚMEROS
+    É possíssel usar LETRAS ou NÚMEROS
+    Não podem conter ESPAÇOS
+    Não podem ser PALAVRAS RESERVADAS
+    MAÍUSCULAS e MINÚSCULAS fazem diferença
+    Tenta escolher NOMES COERENTES para as variáveis
+    Evite se tornar um PROGRAMADOR ALFABETO ou um PROGRAMADOR CONTADOR
+
+node > typeof 
+
+number
+    Infitiny
+    NaN
+string
+boolean
+null
+undefined
+object
+    Array
+function
+
+Number.parseInt(n) >> converter a variavel para inteiro(int)
+String(n) / n.toString()
+Number(n)
+ ==============
+ =var s = 'javascript'
+ ='estou aprendendo s'     >> não faz interpolação
+ ='estou aprendendo' + s   >> usa concatenação
+ =`estou aprendendo ${s}`  >> usa template string
+ ==============
+
+ s.length        >> informa a quantidades de caracteres na string
+ s.toUpperCase() >> joga tudo para maiúsculo
+ s.toLowerCase() >> joga tudo para minúsculo
+
+ s.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
