@@ -4,29 +4,34 @@
         <meta charset="UTF-8">
         <meta name="viewport"
         content="width=device-width,initial-scale=1.0">
-        <title>Site Pika</title>
+        <title>Teste de Video</title>
         <link rel="shortcut icon" href="../midia/icon_site.png" type="image/x-icon">
         <link rel="stylesheet" href="../main.css">
         <link rel="stylesheet" href="videos.css">
         <style>
             main {
-                margin: auto;
-                min-width: 320px;
+                width: 100vw;
                 max-width: 800px;
             }
             #video {
                 background-color: #33727e;
-                padding: 20px;
-                padding-bottom: 55%;
-                margin: 0px -20px 30px -20px;
+                margin: 0px;
+                width: 100%;
+                height: 60vw;
+                max-height: 400px;
+                min-height: 50px;
+
                 position: relative;
             }
             #video > iframe {
-                position: absolute;
-                top: 5%;
-                left: 5%;
                 width: 90%;
+                max-width: 500px;
                 height: 90%;
+                max-height: 400px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
             }
             
         </style>
@@ -46,12 +51,15 @@
         </header>
         <main>
             <div id="video">
-                <iframe width="400" height="315" src="https://www.youtube.com/embed/M8sguT0zQfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/DrdQOjD84DQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
+            <section>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque neque odio voluptatibus molestias labore nulla odit expedita enim laboriosam, dicta doloremque ducimus ipsa laudantium cum id distinctio! Molestiae, sapiente placeat!</p>
         </main>
         <footer>
             <div id="color_bar"></div>
             <h2>site em desenvolvimento</h2>
+            </section>
         </footer>
     </body>
 </html>

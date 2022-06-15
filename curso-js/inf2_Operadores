@@ -6,13 +6,13 @@ OPERADORES ARITMÉTICOS
 5 / 2 = 2.5     divisão
 5 % 2 = 1       resto da multiplicação
 5 ** 2 = 25     elevado a potência
-
+==============================================================
 ORDEM DE PRECEDÊNCIA:
     ()
     **
     * / %
     + -
-
+==============================================================
 AUTOATRIBUIÇÃO:
 var n = 3
 n = n  + 4      simplif: n += 4
@@ -21,23 +21,23 @@ n = n + 4       simplif: n *= 4
 n = n / 2       simplif: n /= 2
 n = n ** 2      simplif: n **= 2
 n = n % 5       simplif: n %= 5
-
+==============================================================
 INCREMENTO:
 var x = 5
 
 n = n + 1       n++
 n = n - 1       n--
-
+==============================================================
 INDENTIDADE:
 5 == 5      true
 5 == '5'    true
 5 === '5'   false
 5 === 5     true
-
+==============================================================
 LÓGICOS:
 !   negação = não
-%%  conjunção = e
+&&  conjunção = e
 ||  disjunção = ou
-
+==============================================================
 TERNÁRIO:
 média>=7.0 ? "aprovado" : "reprovado"

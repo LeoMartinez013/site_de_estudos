@@ -1,0 +1,13 @@
+Variáveis simples só conseguem conseguem armazenar um valor por vez
+
+Variáveis compostas devem ser capazes de armazenar vários valores em uma mesma estrutura
+
+variável composta = array/vetor
+elemento do vetor = indice/key
+
+let num = [5,8,4]
+
+num.length = comprimento do vetor
+num.sort() = ordena os elementos dentro do vetor ficam em ordem crescente
+num.indexOf(Número do elemento) = busca a posição do elemento no vetor
+**se não tiver o número, retornará -1**

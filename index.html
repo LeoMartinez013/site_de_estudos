@@ -8,10 +8,6 @@
     <link rel="shotcut icon" href="midia/icon_site.png" rel="midia/icon">
      <link rel="stylesheet" href="main.css">
      <style>
-        body {
-            display: flex;
-            flex-direction: column;
-        }
         header > h1 {
             font-size: 7mm;
             text-align: center;
@@ -24,14 +20,6 @@
             
             padding: 0px;
             margin: 0px;
-        }
-        main {
-            min-width: 320px;
-            max-width: 900px;
-            text-align: center;
-            margin: 0px auto;
-            flex-grow: 1;
-            
         }
         #info {
             background-color: #e4e4e4;
@@ -62,6 +50,7 @@
         #links > h1 {
             font-size: 5.5mm;
             margin: 10px 20px;
+            text-align: center;
         }
         #links_github {
             padding: 0px;
@@ -80,12 +69,14 @@
             margin: 0px auto 20px 0px;
         }
         #links > aside > h2 {
+            text-align: left;
             font-size: 4.5mm;
-            margin: 0;
+            margin: 0px 0px 0px 10px;
         }
         #links > aside > p {
-            margin: 0;
             color: #360099;
+            text-align: left;
+            margin: 0px 0px 0px 30px;
         }
         #pags {
             height: auto;
@@ -100,7 +91,9 @@
             text-align: center;
             margin: 10px 20px;
         }
-        
+        #pags > aside > p {
+            text-align: center;
+        }
      </style>
 </head>
 <body>
@@ -115,10 +108,10 @@
     <main>
         <article id="info">
             <h1>
-                Olá, estou criando esse site para meus estudos de programação web.
+                Oi, estou criando esse site para meus estudos de programação web.
             </h1>
         </article>
-        <div id="teste">
+        <section id="teste">
             <section id="links">
                 <h1>Meus sites de ajuda</h1>
                 <!--GITHUB-->
@@ -168,7 +161,7 @@
                     </p>
                 </aside>
             </section>
-        </div>
+        </section>
     </main>
     <footer>
         <div id="color_bar"></div>
