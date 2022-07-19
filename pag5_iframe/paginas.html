@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../midia/icon_site.png" type="image/x-icon">
+    <title>Todas das páginas</title>
+    <link rel="stylesheet" href="../main.css">
+    <style>
+         header > h1 {
+            font-size: 7mm;
+            text-align: center;
+            width: 400px;
+            font-variant: small-caps;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+            padding: 0px;
+            margin: 0px;
+        }
+        iframe {
+            width: 99.6%;
+            height: 400px;
+            border: 2px solid #360099;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <header class="hMenu">
+        <h1>
+            <a class="backMenu" href="../index.html">Leonardo Martinez</a>
+        </h1>
+    </header>
+    <main>
+        <h1>Pré-visualização de todas as páginas</h1>
+        <div>
+            <ul>
+                <li><a href="../curso-js/javascript.html" target="frame" rel="next">Javascript</a></li>
+                <li><a href="../pag1_background/backgrounds.html" target="frame" rel="next">Background</a></li>
+                <li><a href="../pag2_videos/videos.html" target="frame" rel="next">Vídeos</a></li>
+                <li><a href="../pag3_imagem/imagens.html" target="frame" rel="next">Imagens</a></li>
+                <li><a href="../pag4_tabelas/tabelas.html" target="frame" rel="next">Tabelas</a></li>
+                <li><a href="../pag5_iframe/iframe.html" target="frame" rel="next">Iframes</a></li>
+            </ul>
+            <p>
+                <iframe id="if_tela" name="frame" src="">
+                    <p>erro</p>
+                </iframe>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div id="color_bar"></div>
+        <h2>site em desenvolvimento</h2>
+    </footer>
+</body>
+</html>

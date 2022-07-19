@@ -1,75 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-        content="width=device-width,initial-scale=1.0">
-        <title>Tabela 1</title>
-        <link rel="shortcut icon" href="../midia/icon_site.png" type="image/x-icon">
-        <link rel="stylesheet" href="../../main.css">
-        <style>
-            h1 {
-                font-size: 22px;
-                text-align: center;
-            }
-            #tabela {
-                overflow-x: auto;
-            }
-            table {
-                width: 400px;
-                height: auto;
-                text-align: center;
-                border-collapse: collapse;
-                margin: 0% auto 0% auto;
-            }
-            td {
-                width: auto;
-                height: 30px;
-                border: 1px solid black;
-                margin: 0px;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-        </header>
-        <main>
-            <h1>Tabela 1</h1>
-            <!--
-                HIERARQUIA DE TABELAS
-                table = tabela
-                    table row(tr) = linha de tabela
-                        table header = cabeçalho de tabela
-            -->
-            <div id="tabela">
-                <table id="tabela1">
-                    <tr class="tds1">
-                        <td>A1</td>
-                        <td>B1</td>
-                        <td>C1</td>
-                    </tr>
-                    <tr class="tds1">
-                        <td>A2</td>
-                        <td>B2</td>
-                        <td>C2</td>
-                    </tr>
-                    <tr class="tds1">
-                        <td>A3</td>
-                        <td>B3</td>
-                        <td>C3</td>
-                    </tr>
-                    <tr class="tds1">
-                        <td>A4</td>
-                        <td>B4</td>
-                        <td>C4</td>
-                    </tr>
-                </table>
-            </div>
-        </main>
-        <footer>
-            <div id="color_bar"></div>
-            <h2>site em desenvolvimento</h2>
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <title>Tabela 1</title>
+    <link rel="shortcut icon" href="../midia/icon_site.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../main.css">
+    <style>
+        header > h1 {
+            font-size: 7mm;
+            text-align: center;
+            width: 400px;
+            font-variant: small-caps;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            
+            padding: 0px;
+            margin: 0px;
+        }
+        h1 {
+            font-size: 22px;
+            text-align: center;
+        }
+        #tabela {
+            overflow-x: auto;
+        }
+        table {
+            width: 400px;
+            height: auto;
+            text-align: center;
+            border-collapse: collapse;
+            margin: 0% auto 0% auto;
+        }
+        td {
+            width: auto;
+            height: 30px;
+            border: 1px solid black;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header class="hMenu">
+        <h1>
+            <a class="backMenu" href="../../index.html">Leonardo Martinez</a>
+        </h1>
+    </header>
+    <main>
+        <h1>Tabela 1</h1>
+        <!--
+            HIERARQUIA DE TABELAS
+            table = tabela
+                table row(tr) = linha de tabela
+                    table header = cabeçalho de tabela
+        -->
+        <div id="tabela">
+            <table id="tabela1">
+                <tr class="tds1">
+                    <td>A1</td>
+                    <td>B1</td>
+                    <td>C1</td>
+                </tr>
+                <tr class="tds1">
+                    <td>A2</td>
+                    <td>B2</td>
+                    <td>C2</td>
+                </tr>
+                <tr class="tds1">
+                    <td>A3</td>
+                    <td>B3</td>
+                    <td>C3</td>
+                </tr>
+                <tr class="tds1">
+                    <td>A4</td>
+                    <td>B4</td>
+                    <td>C4</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div id="color_bar"></div>
+        <h2>site em desenvolvimento</h2>
+    </footer>
+</body>
 </html>
 

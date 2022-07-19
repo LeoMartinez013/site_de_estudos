@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-        content="width=device-width,initial-scale=1.0">
-        <title>Teste de Imagem</title>
-        <link rel="shortcut icon" href="../midia/icon_site.png" type="image/x-icon">
-        <link rel="stylesheet" href="../main.css">
-        <link rel="stylesheet" href="../pag3/imagens.css">
-        <style>
-            main {
-
-                min-width: 320px;
-                max-width: 1240px;
-                padding: 20px;
-            }
-            #imagem_responsiva {
-                text-align: center;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-        </header>
-        <main>
-            <h1>
-                Teste de imagem responsiva
-            </h1>
-            <div id="imagem_responsiva">
-                <picture class="teste_imagens">
-                    <source media="(max-width: 500px)" srcset="../midia/foto-p.png" type="image/png">
-                    <source media="(max-width: 900px)" srcset="../midia/foto-m.png" type="image/png">
-                    <img src="../midia/foto-g.png" alt="foto g">
-                </picture>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <title>Teste de Imagem</title>
+    <link rel="shortcut icon" href="../midia/icon_site.png" type="image/x-icon">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../pag3/imagens.css">
+    <style>
+        header > h1 {
+            font-size: 7mm;
+            text-align: center;
+            width: 400px;
+            font-variant: small-caps;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
             
-        </main>
-        <footer>
-            <div id="color_bar"></div>
-            <h2>site em desenvolvimento</h2>
-        </footer>
-    </body>
+            padding: 0px;
+            margin: 0px;
+        }
+        main {
+
+            min-width: 320px;
+            max-width: 1240px;
+            padding: 20px;
+        }
+        #imagem_responsiva {
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="hMenu">
+        <h1>
+            <a class="backMenu" href="../index.html">Leonardo Martinez</a>
+        </h1>
+    </header>
+    <main>
+        <h1>
+            Teste de imagem responsiva
+        </h1>
+        <div id="imagem_responsiva">
+            <picture class="teste_imagens">
+                <source media="(max-width: 500px)" srcset="../midia/foto-p.png" type="image/png">
+                <source media="(max-width: 900px)" srcset="../midia/foto-m.png" type="image/png">
+                <img src="../midia/foto-g.png" alt="foto g">
+            </picture>
+        </div>
+        
+    </main>
+    <footer>
+        <div id="color_bar"></div>
+        <h2>site em desenvolvimento</h2>
+    </footer>
+</body>
 </html>

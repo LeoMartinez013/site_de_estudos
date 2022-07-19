@@ -63,6 +63,9 @@ header {
     padding: 0px;
     margin: 0px;
 }
+.backMenu {
+    color: var(--headerText_teste);
+}
 main {
     background-color: var(--main_teste);
     padding: 0px;
