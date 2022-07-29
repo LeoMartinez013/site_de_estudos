@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Layout</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f1f1f1;
+        }
+        nav {
+            background: #333;
+            overflow: hidden;
+        }
+        nav > a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav > a:hover {
+            background-color: #ddd;
+            color: #000;
+        }
+        /*================================*/
+        main {
+            padding: 0px;
+            width: 100%;
+            min-width: 320px;
+            max-width: 900px;
+            margin: 10px auto;
+        }
+        .links {
+            width: 300px;
+            border: 1px outset #360099;
+            border-radius: 15px;
+            margin: auto 10px 20px 10px;
+        }
+        .links > h2 {
+            font-size: 4.5mm;
+            margin: 10px 20px;
+            text-align: center;
+        }
+        .links_github {
+            padding: 0px;
+            margin: 0px auto 10px 0px;
+        }
+        .links_html {
+            padding: 0p x;
+            margin: 0px auto 10px 0px;
+        }
+        .links_css {
+            padding: 0px;
+            margin: 0px auto 20px 0px;
+        }
+        .links_js {
+            padding: 0px;
+            margin: 0px auto 20px 0px;
+        }
+        .links > div > h3 {
+            text-align: left;
+            font-size: 4.5mm;
+            margin: 0px 0px 0px 10px;
+        }
+        .links > div > p {
+            color: #360099;
+            text-align: left;
+            margin: 0px 0px 0px 30px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://github.com/LeoMartinez013/meu_site" target="_blank" rel="external">Github</a>
+        <a href="#">Link</a>
+        <a href="#" style="float: right;">Link</a>
+    </nav>
+    <main>
+        <article class="leftcolumn">
+            <aside class="links">
+                <h2>Meus sites de ajuda</h2>
+                <!--GITHUB-->
+                <div class="links_github">
+                    <h3>Github</h3>
+                    <p>↳ <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">Módulo 1 - Curso em Video</a></p>
+                </div>
+                <!--HTML-->
+                <div class="links_html">
+                    <h3>HMTL</h3>
+                    <p>↳ <a href="https://www.devmedia.com.br/trabalhando-com-div-em-html/37209" target="_blank" rel="extenal">trabalhando com DIV</a></p>
+                    <p>↳ <a href="https://www.devmedia.com.br/css-unidades/41239" target="_blank" rel="external"> Unidades de medida</a></p>
+                </div>
+                <!--CSS-->
+                <div class="links_css">
+                    <h3>CSS</h3>
+                    <p>↳ <a href="https://www.maujor.com/tutorial/propriedades-css-para-estilizacao-de-fontes.php" target="_blank" rel="external">formatação CSS</a></p>
+                    <p>↳ <a href="https://www.freecodecamp.org/portuguese/news/como-centralizar-uma-imagem-na-vertical-e-na-horizontal-com-css/" target="_blank" rel="external">Centralização de imagens</a></p>
+                    <p>↳ <a href="http://www.w3bai.com/en-US/cssref/css_websafe_fonts.html" target="_blank" rel="external">Fontes de CSS</a></p>
+                    <p>↳ <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-17-aula-7-responsividade-para-sites/" target="_blank" rel="external">Site Responsivo</a></p>
+                </div>
+                <!--JavaScript-->
+                <div class="links_js">
+                    <h3>JavaScript</h3>
+                    <p>↳ <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank" rel="external">Eventos DOM</a></p>
+                </div>
+            </aside>
+        </article>
+        <article class="rightcolumn">
+
+        </article>
+    </main>
+</body>
+</html>

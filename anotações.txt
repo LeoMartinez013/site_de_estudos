@@ -35,7 +35,7 @@ inline-level: caixa que pode usar na mesma linha q outras caixas
     <button>
     <select>
 --------------------------------------------
-background-size: cove; < mostra a imagem na tela toda, mas cortando partes
+background-size: cover; < mostra a imagem na tela toda, mas cortando partes
 
 background-attachment: fixed; < fixa o background no site todo
 
