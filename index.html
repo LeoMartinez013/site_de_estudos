@@ -8,18 +8,28 @@
     <link rel="shotcut icon" href="midia/icon_site.png" rel="midia/icon">
      <link rel="stylesheet" href="main.css">
      <style>
+        * {
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            height: 80px;
+            width: 100%;
+
+            color: var(--headerText_teste);
+            background-color: var(--header_teste);
+        }
         header > h1 {
-            font-size: 7mm;
             text-align: center;
+            align-self: center;
+
+            font-size: 7mm;
             width: 400px;
             font-variant: small-caps;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            
+
             padding: 0px;
-            margin: 0px;
+            margin: 0;
         }
         nav {
             background: #333;
@@ -37,38 +47,45 @@
             background-color: #ddd;
             color: #000;
         }
-        #info {
+        .info {
             background-color: #e4e4e4;
             height: auto;
             padding: 10px;
             margin: 0px 0px 10px 0px;
         }
-        #info > h1 {
+        .info > h2 {
             font-size: 4mm;
             font-family: 'Roboto Mono', monospace;
             font-weight: 500;
             text-align: center;
         }
-        #teste {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            justify-content: center;
-            padding: 0px 10px 0px 10px;
+        .row {
+            /* padding: 10px 1%; */
         }
-        #links {
-            width: 300px;
+        .row:after {
+            content: "";
+            display: table;
+            /* flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center; */
+        }
+        .links {
+            width: 48%;
             background-color: #cacaca;
             border: 1px outset #360099;
             border-radius: 15px;
-            margin: auto 10px 20px 10px;
+            
+            float: left;
+            padding: 10px;
+            margin: 0 1%;
+            /* margin: auto 10px 20px 10px; */
         }
-        #links > h1 {
-            font-size: 5.5mm;
-            margin: 10px 20px;
+        .links > h2 {
+            font-size: 5mm;
+            margin: auto;
             text-align: center;
         }
-        #links_github {
+        /* #links_github {
             padding: 0px;
             margin: 0px auto 10px 0px;
         }
@@ -83,38 +100,50 @@
         #links_js {
             padding: 0px;
             margin: 0px auto 20px 0px;
-        }
-        #links > aside > h2 {
+        } */
+        .links > h3 {
             text-align: left;
             font-size: 4.5mm;
-            margin: 0px 0px 0px 10px;
+            margin: 5px 0px 0px 10%;
         }
-        #links > aside > p {
+        .links > p {
             color: #360099;
             text-align: left;
-            margin: 0px 0px 0px 30px;
+            margin: 0px 0px 0px 10%;
         }
-        #pags {
-            height: auto;
-            width: 300px;
+        .pags {
+            width: 48%;
             background-color: #cacaca;
             border: 1px outset #360099;
             border-radius: 15px;
-            margin: auto 10px auto 10px;
+
+            float: left;
+            margin: 0 1%;
         }
-        #pags > h1 {
+        .pags > h2 {
             font-size: 5mm;
             text-align: center;
             margin: 10px 20px;
         }
-        #pags > aside > p {
+        .pags > aside > p {
             color: #360099;
             text-align: center;
         }
+        @media screen and (max-width: 600px){
+            .links, .pags {
+                width: 98%;
+                margin: 0 1%;
+            }
+            .pags {
+                margin-top: 10px;
+            }
+        }
+
      </style>
 </head>
 <body>
-    <header class="hMenu">
+    <!-- <header class="hMenu"> -->
+    <header>
         <h1>
             <a class="backMenu" href="index.html">Leonardo Martinez</a>
         </h1>
@@ -125,43 +154,41 @@
         <a href="#" style="float: right;">Link</a>
     </nav>
     <main>
-        <article id="info">
-            <h1>
+        <article class="info">
+            <h2>
                 Oi, estou criando esse site para meus estudos de programação web.
-            </h1>
+            </h2>
         </article>
-        <section id="teste">
-            <section id="links">
-                <h1>Meus sites de ajuda</h1>
+        <section class="row">
+            <section class="links">
+
+                <h2>Meus sites de ajuda</h2>
+
                 <!--GITHUB-->
-                <aside id="links_github">
-                    <h2>Github</h2>
-                    <p>↳ <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">Módulo 1 - Curso em Video</a></p>
-                </aside>
+                <h3>Github</h3>
+                <p>↳ <a href="https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf" target="_blank" rel="external">Módulo 1 - Curso em Video</a></p>
+
                 <!--HTML-->
-                <aside id="links_html">
-                    <h2>HMTL</h2>
-                    <p>↳ <a href="https://www.devmedia.com.br/trabalhando-com-div-em-html/37209" target="_blank" rel="extenal">trabalhando com DIV</a></p>
-                    <p>↳ <a href="https://www.devmedia.com.br/css-unidades/41239" target="_blank" rel="external"> Unidades de medida</a></p>
-                </aside>
+                <h3>HMTL</h3>
+                <p>↳ <a href="https://www.devmedia.com.br/trabalhando-com-div-em-html/37209" target="_blank" rel="extenal">trabalhando com DIV</a></p>
+                <p>↳ <a href="https://www.devmedia.com.br/css-unidades/41239" target="_blank" rel="external"> Unidades de medida</a></p>
+
                 <!--CSS-->
-                <aside id="links_css">
-                    <h2>CSS</h2>
-                    <p>↳ <a href="https://www.maujor.com/tutorial/propriedades-css-para-estilizacao-de-fontes.php" target="_blank" rel="external">formatação CSS</a></p>
-                    <p>↳ <a href="https://www.freecodecamp.org/portuguese/news/como-centralizar-uma-imagem-na-vertical-e-na-horizontal-com-css/" target="_blank" rel="external">Centralização de imagens</a></p>
-                    <p>↳ <a href="http://www.w3bai.com/en-US/cssref/css_websafe_fonts.html" target="_blank" rel="external">Fontes de CSS</a></p>
-                    <p>↳ <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-17-aula-7-responsividade-para-sites/" target="_blank" rel="external">Site Responsivo</a></p>
-                </aside>
+                <h3>CSS</h3>
+                <p>↳ <a href="https://www.maujor.com/tutorial/propriedades-css-para-estilizacao-de-fontes.php" target="_blank" rel="external">formatação CSS</a></p>
+                <p>↳ <a href="https://www.freecodecamp.org/portuguese/news/como-centralizar-uma-imagem-na-vertical-e-na-horizontal-com-css/" target="_blank" rel="external">Centralização de imagens</a></p>
+                <p>↳ <a href="http://www.w3bai.com/en-US/cssref/css_websafe_fonts.html" target="_blank" rel="external">Fontes de CSS</a></p>
+                <p>↳ <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-17-aula-7-responsividade-para-sites/" target="_blank" rel="external">Site Responsivo</a></p>
+                
                 <!--JavaScript-->
-                <aside id="links_js">
-                    <h2>JavaScript</h2>
-                    <p>↳ <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank" rel="external">Eventos DOM</a></p>
-                </aside>
+                <h3>JavaScript</h3>
+                <p>↳ <a href="https://www.w3schools.com/jsref/dom_obj_event.asp" target="_blank" rel="external">Eventos DOM</a></p>
+
             </section>
-            <section id="pags">
-                <h1>
+            <section class="pags">
+                <h2>
                     Testes feitos:
-                </h1>
+                </h2>
                 <aside>
                     <p>
                         <a href="curso-js/javascript.html" target="_self" rel="next">Javascript</a>

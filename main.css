@@ -43,9 +43,8 @@ a {
    
     font-weight: 500;
 }
-header {
+/* header {
     color: var(--headerText_teste);
-    position: relative;
     background-color: var(--header_teste);
     height: 60px;
     width: 100%;
@@ -55,13 +54,32 @@ header {
 }
 .hMenu {
     color: var(--headerText_teste);
-    position: relative;
     background-color: var(--header_teste);
     height: 60px;
     width: 100%;
     
     padding: 0px;
     margin: 0px;
+} */
+header {
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    width: 100%;
+
+    color: var(--headerText_teste);
+    background-color: var(--header_teste);
+}
+header > h1 {
+    text-align: center;
+    align-self: center;
+
+    font-size: 7mm;
+    width: 400px;
+    font-variant: small-caps;
+
+    padding: 0px;
+    margin: 0;
 }
 .backMenu {
     color: var(--headerText_teste);
@@ -75,12 +93,12 @@ main {
     margin: 0px auto;
     flex-grow: 1;
 }
-main > h1 {
+/* main > h1 {
     text-align: center;
     font-size: 20px;
     background-color: #cacaca;
     border: 1px outset #360099;
-}
+} */
 footer {
     color: var(--footerText_teste);
     background-color: var(--footer_teste);
