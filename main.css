@@ -13,11 +13,6 @@ paleta {
     #0D1117
 }
 :root {
-    --header_padrao: #1f4952;
-    --headerText_padrao: #A5CAD3;
-    --fundo_padrao: #C5D7D9;
-
-
     --fundo_teste:  #e4e4e4;
     --main_teste: #ffffff;
     --header_teste: #1d1d1d;
@@ -81,7 +76,7 @@ header > h1 {
     padding: 0px;
     margin: 0;
 }
-.backMenu {
+header > h1 > a {
     color: var(--headerText_teste);
 }
 main {

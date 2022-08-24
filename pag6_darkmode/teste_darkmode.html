@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../main.css">
+    <title>Teste de Dark Mode</title>
+    <style>
+        .dark_main {
+            background-color: #2f2f2f;
+        }
+        .dark_button {
+            display: table;
+
+            background-color: #484848;
+
+            padding: 15px 10px;
+            border: 2px solid #7e00b0;
+            border-radius: 5px;
+            margin: 10px auto;
+        }
+        .dark_button > p {
+            color: #ebebeb;
+            margin: 0;
+        }
+        .white_main {
+            background-color: #ffffff;
+        }
+        .white_button {
+            display: table;
+
+            background-color: #ebebeb;
+
+            padding: 15px 10px;
+            border: 2px solid rgb(126, 0, 176);
+            border-radius: 5px;
+            margin: 10px auto;
+        }
+        .white_button > p {
+            color: #000;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="../index.html">Leonardo Martinez</a>
+        </h1>
+    </header>
+    <main class="white_main">
+        <div class="white_button" id="modebutton" onclick="javascript:mudarTema();">
+            <p>white mode</p>
+        </div>
+    </main>
+    <footer>
+        <div id="color_bar"></div>
+        <h2>site em desenvolvimento</h2>
+    </footer>
+    <script>
+        var temaAtual = document.getElementById("modebutton").className;
+        mudarTema(){
+            if(temaAtual == "white_button"){
+                document.getElementById("modebutton").className = 'dark_button';
+                document.main.className = 'dark_main';
+            }else{
+                document.getElementById("modebutton").className = 'white_button';
+                document.main.className = 'white_main';
+            }
+        }
+    </script>
+</body>
+</html>
