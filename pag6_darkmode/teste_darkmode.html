@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../main.css">
     <title>Teste de Dark Mode</title>
+    <script>
+        var temaAtual = document.getElementById("modebutton").className;
+        mudarTema(){
+            if(temaAtual == "white_button"){
+                document.getElementById("modebutton").className = 'dark_button';
+                document.main.className = 'dark_main';
+            }else{
+                document.getElementById("modebutton").className = 'white_button';
+                document.main.className = 'white_main';
+            }
+        }
+    </script>
     <style>
         .dark_main {
             background-color: #2f2f2f;
@@ -58,17 +70,6 @@
         <div id="color_bar"></div>
         <h2>site em desenvolvimento</h2>
     </footer>
-    <script>
-        var temaAtual = document.getElementById("modebutton").className;
-        mudarTema(){
-            if(temaAtual == "white_button"){
-                document.getElementById("modebutton").className = 'dark_button';
-                document.main.className = 'dark_main';
-            }else{
-                document.getElementById("modebutton").className = 'white_button';
-                document.main.className = 'white_main';
-            }
-        }
-    </script>
+    
 </body>
 </html>
