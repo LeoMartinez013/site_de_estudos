@@ -1,2 +1,1 @@
-# meu_site
- criando esse site para meus estudos de desenvolvimento web
+Estou usando este repositório para botar em prática tudo que estou estudando.
