@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="../main.css">
     <title>Teste de Dark Mode</title>
     <script>
-        var temaAtual = document.getElementById("modebutton").className;
-        mudarTema(){
-            if(temaAtual == "white_button"){
+        var botao = document.getElementById("modebutton");
+        var temaAtual = "whitemode";
+        botao.addEventListener('Click', mudarTema);
+        function mudarTema(){
+            if(temaAtual == "whitemode"){
                 document.getElementById("modebutton").className = 'dark_button';
-                document.main.className = 'dark_main';
+                document.getElementById('modemain').className = 'dark_main';
+                temaAtual = "darkmode";
             }else{
                 document.getElementById("modebutton").className = 'white_button';
-                document.main.className = 'white_main';
+                document.getElementById('modemain').className = 'white_main';
+                temaAtual = "whitemode";
             }
         }
     </script>
@@ -61,7 +65,7 @@
             <a href="../index.html">Leonardo Martinez</a>
         </h1>
     </header>
-    <main class="white_main">
+    <main class="white_main" id="modemain">
         <div class="white_button" id="modebutton" onclick="javascript:mudarTema();">
             <p>white mode</p>
         </div>
